@@ -1,4 +1,4 @@
 
 	    [ckan.plugins]
-  	    temporal=ckanext.extend_search.plugin:TemporalPlugin
+  	    temporal=ckanext.temporal.plugin:TemporalPlugin
 	

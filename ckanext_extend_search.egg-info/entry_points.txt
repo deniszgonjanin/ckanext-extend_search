@@ -1,4 +1,0 @@
-
-	    [ckan.plugins]
-  	    extend_search=ckanext.extend_search.plugin:ExtendSearchPlugin
-	
