@@ -1,6 +1,7 @@
 setup.py
 ckanext/__init__.py
 ckanext/extend_search/__init__.py
+ckanext/extend_search/helpers.py
 ckanext/extend_search/plugin.py
 ckanext_extend_search.egg-info/PKG-INFO
 ckanext_extend_search.egg-info/SOURCES.txt

@@ -52,10 +52,10 @@ this.ckan.module('daterangepicker-module', function ($, _) {
             // Add a date-range picker widget to the <input> with id #daterange
            $('input[id="daterange"]').daterangepicker({
                 ranges: {
-                   'Today': [moment().startOf('day'), moment().endOf('day')],
+                   'Today': [moment().startOf('day'), moment().endOf('day').add('day', 1)],
                    'Yesterday': [moment().startOf('day').subtract('days', 1), moment().endOf('day').subtract('days', 1)],
-                   'Last 7 Days': [moment().startOf('day').subtract('days', 6), moment().endOf('day')],
-                   'Last 30 Days': [moment().startOf('day').subtract('days', 29), moment().endOf('day')],
+                   'Last 7 Days': [moment().startOf('day').subtract('days', 6), moment().endOf('day').add('day', 1)],
+                   'Last 30 Days': [moment().startOf('day').subtract('days', 29), moment().endOf('day').add('day', 1)],
                    'This Month': [moment().startOf('month'), moment().endOf('month')],
                    'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')],
                    'Last Year': [moment().subtract('year', 1).startOf('year'), moment().subtract('year', 1).endOf('year')]
