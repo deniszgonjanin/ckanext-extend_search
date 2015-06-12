@@ -12,7 +12,6 @@ class TemporalPlugin(plugins.SingletonPlugin):
     '''
     Extends the Ckan dataset/package search
     '''
-    print "loading ckanext-extend_search"
 
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.IPackageController, inherit=True)
@@ -20,7 +19,7 @@ class TemporalPlugin(plugins.SingletonPlugin):
 
     def update_config(self, config):
         toolkit.add_template_directory(config, 'templates')
-        toolkit.add_resource('fanstatic', 'ckanext-datesearch')
+        toolkit.add_resource('fanstatic', 'ckanext-temporal')
 
 
     # Add the custom parameters to Solr's facet queries
