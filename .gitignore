@@ -2,3 +2,4 @@
 .project
 .pydevproject
 ckanext_extend_search.egg-info/
+*.log
