@@ -8,7 +8,7 @@ from ckan.lib.base import c
 from sqlalchemy import distinct
 from helpers import extend_search_convert_local_to_utc_timestamp
 
-class ExtendSearchPlugin(plugins.SingletonPlugin):
+class TemporalPlugin(plugins.SingletonPlugin):
     '''
     Extends the Ckan dataset/package search
     '''
